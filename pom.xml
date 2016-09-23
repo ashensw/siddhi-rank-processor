@@ -70,7 +70,8 @@
                         org.wso2.siddhi.extension.rank.*;version="${version.org.wso2.siddhi}"
                     </Export-Package>
                     <Import-Package>
-                        *;resolution:=optional
+                        org.wso2.siddhi.*;version="${version.org.wso2.siddhi}",
+                        org.apache.log4j;version="${version.org.apache.log4j.wso2}"
                     </Import-Package>
                     <DynamicImport-Package>*</DynamicImport-Package>
                 </instructions>
