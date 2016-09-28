@@ -75,7 +75,7 @@ public class RankStreamProcessor extends StreamProcessor {
             throw new ExecutionPlanValidationException(
                     "Invalid parameter type found for the 2nd argument of RankStreamProcessor, required "
                             + Attribute.Type.DOUBLE + ". but found "
-                            + attributeExpressionExecutors[0].getReturnType().toString());
+                            + attributeExpressionExecutors[1].getReturnType().toString());
         }
 
         if (attributeExpressionExecutors[2] instanceof ConstantExpressionExecutor) {
